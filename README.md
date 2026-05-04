@@ -4,7 +4,12 @@ Static marketing, support, privacy, and terms site for Fold.
 
 ## Local Preview
 
-Open `index.html` directly, or run a tiny local server:
+Install dependencies, build the local Tailwind CSS file, then open `index.html` directly or run a tiny local server:
+
+```sh
+npm install --cache ./.npm-cache
+npm run build
+```
 
 ```sh
 python3 -m http.server 8080
