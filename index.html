@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fold — Read everything. Miss nothing.</title>
+  <meta name="description" content="Fold is an iPhone RSS reader that stores every article locally, fetches full article text, and keeps your reading library private.">
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/site.js"></script>
+</head>
+<body class="bg-fold-bg text-fold-ink antialiased dark:bg-fold-darkBg dark:text-fold-darkInk">
+
+  <header class="sticky top-0 z-50 border-b border-fold-line/80 bg-fold-bg/90 backdrop-blur dark:border-fold-darkLine/80 dark:bg-fold-darkBg/90">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
+      <a href="index.html" class="flex items-center gap-3 font-semibold">
+        <span class="block h-8 w-8">
+          <img src="assets/icon-light.png" alt="" class="h-8 w-8 rounded-lg dark:hidden">
+          <img src="assets/icon-dark.png" alt="" class="hidden h-8 w-8 rounded-lg dark:block">
+        </span>
+        <span>Fold</span>
+      </a>
+      <div class="flex items-center gap-2">
+        <a href="#features" class="hidden px-3 py-2 text-sm text-fold-muted hover:text-fold-ink dark:text-fold-darkMuted dark:hover:text-fold-darkInk sm:inline">Features</a>
+        <a href="support.html" class="hidden px-3 py-2 text-sm text-fold-muted hover:text-fold-ink dark:text-fold-darkMuted dark:hover:text-fold-darkInk sm:inline">Support</a>
+        <button data-theme-toggle class="rounded-full border border-fold-line px-3 py-2 text-sm text-fold-muted hover:text-fold-ink dark:border-fold-darkLine dark:text-fold-darkMuted dark:hover:text-fold-darkInk">
+          <span data-theme-label>Dark</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="mx-auto grid max-w-6xl items-center gap-14 px-5 py-16 lg:grid-cols-[1.1fr_0.9fr] lg:py-24">
+      <div>
+        <img src="assets/icon-light.png" alt="" class="mb-8 h-16 w-16 rounded-2xl shadow-lg shadow-stone-950/10 dark:hidden sm:h-20 sm:w-20">
+        <img src="assets/icon-dark.png" alt="" class="mb-8 hidden h-16 w-16 rounded-2xl shadow-lg shadow-stone-950/30 dark:block sm:h-20 sm:w-20">
+        <p class="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-fold-ember">iPhone RSS Reader</p>
+        <h1 class="font-serif text-5xl italic font-normal leading-[1.08] text-fold-ink dark:text-fold-darkInk sm:text-6xl lg:text-[5rem]">Read everything.<br>Miss nothing.</h1>
+        <p class="mt-6 max-w-lg text-lg leading-8 text-fold-muted dark:text-fold-darkMuted">Fold captures every article the moment it arrives — so nothing disappears when a feed rolls over. Your library stays on your device, searchable, available offline, and entirely yours.</p>
+        <div class="mt-8 flex flex-wrap items-center gap-3">
+          <span class="inline-flex rounded-full bg-fold-ember px-5 py-3 text-sm font-semibold text-white">Coming soon to the App Store</span>
+          <span class="text-sm text-fold-muted dark:text-fold-darkMuted">$4.99 · No account required</span>
+        </div>
+      </div>
+
+      <!-- Reader View mockup -->
+      <div class="mx-auto w-full max-w-xs">
+        <div class="rounded-[2.5rem] border border-fold-line bg-fold-surface p-3 shadow-2xl shadow-stone-950/15 dark:border-fold-darkLine dark:bg-fold-darkSurface">
+          <div class="overflow-hidden rounded-[2rem] border border-fold-line bg-fold-bg dark:border-fold-darkLine dark:bg-fold-darkBg">
+            <div class="border-b border-fold-line px-5 py-4 dark:border-fold-darkLine">
+              <p class="text-[10px] font-semibold uppercase tracking-widest text-fold-ember">Daring Fireball</p>
+              <h2 class="mt-1.5 text-base font-semibold leading-snug text-fold-ink dark:text-fold-darkInk">The Mac Turns Forty</h2>
+              <p class="mt-1 text-[11px] text-fold-muted dark:text-fold-darkMuted">John Gruber · 6 min read</p>
+            </div>
+            <div class="space-y-3 px-5 py-5">
+              <p class="font-serif text-sm leading-6 text-fold-ink dark:text-fold-darkInk">Forty years is a long time for anything to survive in the technology industry. It is an eternity for something to <em>thrive.</em></p>
+              <p class="font-serif text-sm leading-6 text-fold-muted dark:text-fold-darkMuted">The original Mac shipped with 128K of RAM and a 9-inch black-and-white screen. Today's MacBook Pro has more transistors than grains of sand on a large beach...</p>
+              <p class="font-serif text-sm leading-6 text-fold-muted dark:text-fold-darkMuted">What's remarkable isn't the hardware — it's the continuity of purpose.</p>
+            </div>
+            <div class="flex items-center justify-between border-t border-fold-line px-4 py-3 dark:border-fold-darkLine">
+              <span class="rounded-full border border-fold-line px-3 py-1.5 text-[11px] text-fold-muted dark:border-fold-darkLine dark:text-fold-darkMuted">Reader View</span>
+              <span class="text-xs text-fold-muted dark:text-fold-darkMuted">Aa</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Archive callout -->
+    <section class="border-y border-fold-line bg-fold-surface dark:border-fold-darkLine dark:bg-fold-darkSurface">
+      <div class="mx-auto max-w-6xl px-5 py-20">
+        <div class="grid gap-10 lg:grid-cols-2 lg:items-start">
+          <div>
+            <p class="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-fold-ember">Local archive</p>
+            <h2 class="text-3xl font-bold leading-tight text-fold-ink dark:text-fold-darkInk sm:text-4xl">Most RSS readers forget.</h2>
+            <p class="mt-1 font-serif text-3xl italic leading-tight text-fold-ember sm:text-4xl">Fold remembers.</p>
+          </div>
+          <p class="font-serif text-lg leading-8 text-fold-muted dark:text-fold-darkMuted">Most apps show a rolling window — posts vanish from the feed after days or weeks. Fold captures articles the moment they arrive and stores them locally. Whether you're catching up after a vacation or hunting down a piece from months ago, it's still there.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="mx-auto max-w-6xl px-5 py-20">
+      <div class="mb-10 max-w-2xl">
+        <p class="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-fold-ember">Features</p>
+        <h2 class="font-serif text-4xl italic leading-tight text-fold-ink dark:text-fold-darkInk sm:text-5xl">Built for readers<br>who mean it.</h2>
+      </div>
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+
+        <article class="rounded-xl border border-fold-line bg-fold-surface p-5 dark:border-fold-darkLine dark:bg-fold-darkSurface">
+          <div class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-orange-100 text-fold-ember dark:bg-stone-900">
+            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M4.5 2A1.5 1.5 0 0 0 3 3.5v13A1.5 1.5 0 0 0 4.5 18h11a1.5 1.5 0 0 0 1.5-1.5V7.621a1.5 1.5 0 0 0-.44-1.06l-4.12-4.122A1.5 1.5 0 0 0 11.378 2H4.5Zm2.25 9.5a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5Zm0 3a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5Z" clip-rule="evenodd"/></svg>
+          </div>
+          <h3 class="font-semibold">Full articles</h3>
+          <p class="mt-2 text-sm leading-6 text-fold-muted dark:text-fold-darkMuted">Fetches complete article text from feeds that only publish summaries.</p>
+        </article>
+
+        <article class="rounded-xl border border-fold-line bg-fold-surface p-5 dark:border-fold-darkLine dark:bg-fold-darkSurface">
+          <div class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-orange-100 text-fold-ember dark:bg-stone-900">
+            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10.75 16.82A7.462 7.462 0 0 1 10 17c-.25 0-.496-.014-.74-.043a.75.75 0 0 1-.653-.782V6.565l-2.051 1.369a.75.75 0 1 1-.832-1.248l3-2a.75.75 0 0 1 .832 0l3 2a.75.75 0 0 1-.832 1.248L10.75 6.565v10.254a.75.75 0 0 1-.653.782Z"/><path d="M2.5 2a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 .5.5h15a.5.5 0 0 0 .5-.5v-15a.5.5 0 0 0-.5-.5h-15Z"/></svg>
+          </div>
+          <h3 class="font-semibold">Reader View</h3>
+          <p class="mt-2 text-sm leading-6 text-fold-muted dark:text-fold-darkMuted">Tap to fetch the full article from any feed that only publishes summaries. Presented clean and full-screen, without leaving Fold.</p>
+        </article>
+
+        <article class="rounded-xl border border-fold-line bg-fold-surface p-5 dark:border-fold-darkLine dark:bg-fold-darkSurface">
+          <div class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-orange-100 text-fold-ember dark:bg-stone-900">
+            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M1 11.27c0-.246.033-.492.099-.73l1.523-5.521A2.75 2.75 0 0 1 5.273 3h9.454a2.75 2.75 0 0 1 2.651 2.019l1.523 5.52c.066.239.099.485.099.732V15a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3.73Zm3.068-5.852A1.25 1.25 0 0 1 5.273 4.5h9.454a1.25 1.25 0 0 1 1.205.918l1.523 5.52.015.062H14a1 1 0 0 0-.86.49l-.606 1.02a1 1 0 0 1-.86.49H8.236a1 1 0 0 1-.894-.553l-.448-.894A1 1 0 0 0 6 11H2.53l.015-.062 1.523-5.52Z" clip-rule="evenodd"/></svg>
+          </div>
+          <h3 class="font-semibold">Permanent archive</h3>
+          <p class="mt-2 text-sm leading-6 text-fold-muted dark:text-fold-darkMuted">Articles stay in your local library until you remove the feed. Nothing is ever auto-deleted.</p>
+        </article>
+
+        <article class="rounded-xl border border-fold-line bg-fold-surface p-5 dark:border-fold-darkLine dark:bg-fold-darkSurface">
+          <div class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-orange-100 text-fold-ember dark:bg-stone-900">
+            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11ZM2 9a7 7 0 1 1 12.452 4.391l3.328 3.329a.75.75 0 1 1-1.06 1.06l-3.329-3.328A7 7 0 0 1 2 9Z" clip-rule="evenodd"/></svg>
+          </div>
+          <h3 class="font-semibold">Smart search</h3>
+          <p class="mt-2 text-sm leading-6 text-fold-muted dark:text-fold-darkMuted">Full-text search across your entire local archive — not just titles.</p>
+        </article>
+
+        <article class="rounded-xl border border-fold-line bg-fold-surface p-5 dark:border-fold-darkLine dark:bg-fold-darkSurface">
+          <div class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-orange-100 text-fold-ember dark:bg-stone-900">
+            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M15.621 4.379a3 3 0 0 0-4.242 0l-7 7a3 3 0 0 0 4.241 4.243h.001l.497-.5a.75.75 0 0 1 1.064 1.057l-.498.501-.002.002a4.5 4.5 0 0 1-6.364-6.364l7-7a4.5 4.5 0 0 1 6.368 6.36l-3.455 3.553A2.625 2.625 0 1 1 9.52 9.52l3.45-3.451a.75.75 0 1 1 1.061 1.06l-3.45 3.451a1.125 1.125 0 0 0 1.587 1.595l3.454-3.553a3 3 0 0 0 0-4.243Z" clip-rule="evenodd"/></svg>
+          </div>
+          <h3 class="font-semibold">OPML import & export</h3>
+          <p class="mt-2 text-sm leading-6 text-fold-muted dark:text-fold-darkMuted">Move your feed list to and from any other RSS reader. No lock-in.</p>
+        </article>
+
+        <article class="rounded-xl border border-fold-line bg-fold-surface p-5 dark:border-fold-darkLine dark:bg-fold-darkSurface">
+          <div class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-orange-100 text-fold-ember dark:bg-stone-900">
+            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M15.5 2A2.5 2.5 0 0 1 18 4.5v11a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 2 15.5v-11A2.5 2.5 0 0 1 4.5 2h11ZM5.75 13.5a.75.75 0 0 0 .75-.75v-2.5a.75.75 0 0 0-1.5 0v2.5c0 .414.336.75.75.75Zm4.25 0a.75.75 0 0 0 .75-.75v-5.5a.75.75 0 0 0-1.5 0v5.5c0 .414.336.75.75.75Zm4.25 0a.75.75 0 0 0 .75-.75v-8a.75.75 0 0 0-1.5 0v8c0 .414.336.75.75.75Z"/></svg>
+          </div>
+          <h3 class="font-semibold">Reading streaks</h3>
+          <p class="mt-2 text-sm leading-6 text-fold-muted dark:text-fold-darkMuted">Track your daily reading habit with streak counts, reading history, and library stats.</p>
+        </article>
+
+        <article class="rounded-xl border border-fold-line bg-fold-surface p-5 dark:border-fold-darkLine dark:bg-fold-darkSurface">
+          <div class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-orange-100 text-fold-ember dark:bg-stone-900">
+            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M2.628 1.601C5.028 1.206 7.49 1 10 1s4.973.206 7.372.601a.75.75 0 0 1 .628.74v2.288a2.25 2.25 0 0 1-.659 1.59l-4.682 4.683a2.25 2.25 0 0 0-.659 1.59v3.037c0 .684-.31 1.33-.844 1.757l-1.937 1.55A.75.75 0 0 1 8 18.25v-5.757a2.25 2.25 0 0 0-.659-1.591L2.659 6.22A2.25 2.25 0 0 1 2 4.629V2.34a.75.75 0 0 1 .628-.74Z" clip-rule="evenodd"/></svg>
+          </div>
+          <h3 class="font-semibold">Filter rules</h3>
+          <p class="mt-2 text-sm leading-6 text-fold-muted dark:text-fold-darkMuted">Mute topics globally so matching articles never clutter your unread list.</p>
+        </article>
+
+        <article class="rounded-xl border border-fold-line bg-fold-surface p-5 dark:border-fold-darkLine dark:bg-fold-darkSurface">
+          <div class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-orange-100 text-fold-ember dark:bg-stone-900">
+            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M13 4.5a2.5 2.5 0 1 1 .702 1.737L6.97 9.604a2.518 2.518 0 0 1 0 .792l6.733 3.367a2.5 2.5 0 1 1-.671 1.341l-6.733-3.367a2.5 2.5 0 1 1 0-3.474l6.733-3.366A2.52 2.52 0 0 1 13 4.5Z"/></svg>
+          </div>
+          <h3 class="font-semibold">Share & AI-ready</h3>
+          <p class="mt-2 text-sm leading-6 text-fold-muted dark:text-fold-darkMuted">Share full article text with a custom prompt prefix — ready to drop into any AI tool.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Privacy section -->
+    <section class="border-y border-fold-line bg-fold-surface dark:border-fold-darkLine dark:bg-fold-darkSurface">
+      <div class="mx-auto max-w-6xl px-5 py-20">
+        <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
+          <div>
+            <p class="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-fold-ember">Privacy</p>
+            <h2 class="text-3xl font-bold leading-tight text-fold-ink dark:text-fold-darkInk sm:text-4xl">No account.<br>No backend.<br>No tracking.</h2>
+            <p class="mt-6 font-serif text-lg leading-8 text-fold-muted dark:text-fold-darkMuted">Fold has no server-side component. Your feeds, articles, and reading history live entirely on your device. There's nothing to log in to, nothing being synced to a cloud you don't control, and no one reading over your shoulder.</p>
+          </div>
+          <div class="space-y-3">
+            <div class="flex items-start gap-4 rounded-xl border border-fold-line bg-fold-bg p-5 dark:border-fold-darkLine dark:bg-fold-darkBg">
+              <svg class="mt-0.5 h-5 w-5 shrink-0 text-fold-ember" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10.339 2.237a.75.75 0 0 0-.678 0 21.889 21.889 0 0 1-6.082 2.275.75.75 0 0 0-.579.73v4.958c0 4.02 2.41 7.655 6.112 9.222a.75.75 0 0 0 .576 0A9.994 9.994 0 0 0 16 10.2V5.242a.75.75 0 0 0-.579-.73 21.889 21.889 0 0 1-6.082-2.275Zm3.477 6.347a.75.75 0 0 0-1.132-.987L9.183 11.61 7.28 9.707a.75.75 0 0 0-1.06 1.06l2.47 2.47a.75.75 0 0 0 1.095-.035l4.03-4.617Z" clip-rule="evenodd"/></svg>
+              <div>
+                <p class="font-semibold">No account required</p>
+                <p class="mt-1 text-sm text-fold-muted dark:text-fold-darkMuted">Download and start reading. No sign-up, no email, no password.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4 rounded-xl border border-fold-line bg-fold-bg p-5 dark:border-fold-darkLine dark:bg-fold-darkBg">
+              <svg class="mt-0.5 h-5 w-5 shrink-0 text-fold-ember" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 12.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/><path fill-rule="evenodd" d="M.664 10.59a1.651 1.651 0 0 1 0-1.186A10.004 10.004 0 0 1 10 3c4.257 0 7.893 2.66 9.336 6.41.147.381.146.804 0 1.186A10.004 10.004 0 0 1 10 17c-4.257 0-7.893-2.66-9.336-6.41ZM14 10a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" clip-rule="evenodd"/></svg>
+              <div>
+                <p class="font-semibold">No analytics or tracking</p>
+                <p class="mt-1 text-sm text-fold-muted dark:text-fold-darkMuted">No analytics SDKs, no crash reporters, no third-party code that phones home.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4 rounded-xl border border-fold-line bg-fold-bg p-5 dark:border-fold-darkLine dark:bg-fold-darkBg">
+              <svg class="mt-0.5 h-5 w-5 shrink-0 text-fold-ember" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M2 10a8 8 0 1 1 16 0 8 8 0 0 1-16 0Zm6.39-2.908a.75.75 0 0 1 .766.027l3.5 2.25a.75.75 0 0 1 0 1.262l-3.5 2.25A.75.75 0 0 1 8 12.25v-4.5a.75.75 0 0 1 .39-.658Z" clip-rule="evenodd"/></svg>
+              <div>
+                <p class="font-semibold">Works offline</p>
+                <p class="mt-1 text-sm text-fold-muted dark:text-fold-darkMuted">Every article you've loaded is available without a connection. Read on a plane, in a tunnel, anywhere.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="border-t border-fold-line dark:border-fold-darkLine">
+      <div class="mx-auto max-w-4xl px-5 py-20">
+        <h2 class="text-4xl font-bold tracking-tight">Questions</h2>
+        <div class="mt-8 divide-y divide-fold-line dark:divide-fold-darkLine">
+
+          <details class="group py-5" open>
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold">
+              <span>Is Fold free?</span>
+              <svg class="h-5 w-5 shrink-0 text-fold-ember transition-transform group-open:rotate-90" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/></svg>
+            </summary>
+            <p class="mt-3 font-serif leading-7 text-fold-muted dark:text-fold-darkMuted">$4.99, paid once. No subscription, no ads, no in-app purchases.</p>
+          </details>
+
+          <details class="group py-5">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold">
+              <span>Does Fold delete old articles?</span>
+              <svg class="h-5 w-5 shrink-0 text-fold-ember transition-transform group-open:rotate-90" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/></svg>
+            </summary>
+            <p class="mt-3 font-serif leading-7 text-fold-muted dark:text-fold-darkMuted">Never. Articles stay until you delete the feed. Starred articles are protected and will never be removed.</p>
+          </details>
+
+          <details class="group py-5">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold">
+              <span>What is Reader View?</span>
+              <svg class="h-5 w-5 shrink-0 text-fold-ember transition-transform group-open:rotate-90" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/></svg>
+            </summary>
+            <p class="mt-3 font-serif leading-7 text-fold-muted dark:text-fold-darkMuted">Many feeds only publish a summary. Tap Reader View and Fold fetches the full article text so you can read the whole piece without leaving the app — with calm Literata typography and adjustable font size.</p>
+          </details>
+
+          <details class="group py-5">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold">
+              <span>Does it work offline?</span>
+              <svg class="h-5 w-5 shrink-0 text-fold-ember transition-transform group-open:rotate-90" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/></svg>
+            </summary>
+            <p class="mt-3 font-serif leading-7 text-fold-muted dark:text-fold-darkMuted">Yes. Everything is stored on your device. Any article you've already loaded can be read without an internet connection.</p>
+          </details>
+
+          <details class="group py-5">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold">
+              <span>Can I import my feeds from another app?</span>
+              <svg class="h-5 w-5 shrink-0 text-fold-ember transition-transform group-open:rotate-90" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/></svg>
+            </summary>
+            <p class="mt-3 font-serif leading-7 text-fold-muted dark:text-fold-darkMuted">Yes. Fold supports OPML import — the standard format used by every major RSS reader including Feedly, NetNewsWire, and Reeder. Export from your current app, import in Fold Settings, done.</p>
+          </details>
+
+          <details class="group py-5">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold">
+              <span>Does it sync between my devices?</span>
+              <svg class="h-5 w-5 shrink-0 text-fold-ember transition-transform group-open:rotate-90" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/></svg>
+            </summary>
+            <p class="mt-3 font-serif leading-7 text-fold-muted dark:text-fold-darkMuted">Not yet. Fold is currently iPhone-first and stores everything locally. iCloud sync is planned for a future update.</p>
+          </details>
+
+          <details class="group py-5">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold">
+              <span>Is my data private?</span>
+              <svg class="h-5 w-5 shrink-0 text-fold-ember transition-transform group-open:rotate-90" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/></svg>
+            </summary>
+            <p class="mt-3 font-serif leading-7 text-fold-muted dark:text-fold-darkMuted">Completely. No account, no backend, no analytics. Your feeds, articles, and reading history never leave your device.</p>
+          </details>
+
+          <details class="group py-5">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold">
+              <span>Can I use Fold with AI tools?</span>
+              <svg class="h-5 w-5 shrink-0 text-fold-ember transition-transform group-open:rotate-90" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/></svg>
+            </summary>
+            <p class="mt-3 font-serif leading-7 text-fold-muted dark:text-fold-darkMuted">Yes. Fold can share the full text of any article — not just the link. You can set a custom prefix (like a prompt) that gets prepended every time you share, so pasting into ChatGPT, Claude, or any AI tool takes one tap.</p>
+          </details>
+
+          <details class="group py-5">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold">
+              <span>What devices does Fold support?</span>
+              <svg class="h-5 w-5 shrink-0 text-fold-ember transition-transform group-open:rotate-90" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/></svg>
+            </summary>
+            <p class="mt-3 font-serif leading-7 text-fold-muted dark:text-fold-darkMuted">Currently iPhone (iOS 18 and later). iPad and Mac support are in development.</p>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <section class="border-t border-fold-line bg-fold-surface dark:border-fold-darkLine dark:bg-fold-darkSurface">
+      <div class="mx-auto max-w-4xl px-5 py-24 text-center">
+        <h2 class="font-serif text-4xl italic leading-snug text-fold-ink dark:text-fold-darkInk sm:text-5xl">Start reading without<br>missing a thing.</h2>
+        <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
+          <span class="inline-flex rounded-full bg-fold-ember px-6 py-3 font-semibold text-white">Coming soon to the App Store</span>
+          <span class="text-sm text-fold-muted dark:text-fold-darkMuted">$4.99 · No account required</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-fold-line px-5 py-10 dark:border-fold-darkLine">
+    <div class="mx-auto flex max-w-6xl flex-col gap-4 text-sm text-fold-muted dark:text-fold-darkMuted sm:flex-row sm:items-center sm:justify-between">
+      <p>&copy; 2026 Fold. All rights reserved.</p>
+      <div class="flex flex-wrap gap-4">
+        <a href="privacy.html" class="hover:text-fold-ink dark:hover:text-fold-darkInk">Privacy</a>
+        <a href="terms.html" class="hover:text-fold-ink dark:hover:text-fold-darkInk">Terms</a>
+        <a href="support.html" class="hover:text-fold-ink dark:hover:text-fold-darkInk">Support</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@source "../*.html";
+@source "../assets/site.js";
+
+@theme {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-serif: "Literata", Georgia, Cambria, serif;
+
+  --color-fold-bg: #F5F5F4;
+  --color-fold-surface: #FFFFFF;
+  --color-fold-ink: #1C1917;
+  --color-fold-muted: #57534E;
+  --color-fold-line: #E7E5E4;
+  --color-fold-ember: #C2410C;
+  --color-fold-darkBg: #1C1917;
+  --color-fold-darkSurface: #292524;
+  --color-fold-darkInk: #F5F5F4;
+  --color-fold-darkMuted: #A8A29E;
+  --color-fold-darkLine: #44403C;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("fonts/DMSans-VariableFont_opsz,wght.ttf") format("truetype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 100 1000;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("fonts/DMSans-Italic-VariableFont_opsz,wght.ttf") format("truetype");
+  font-display: swap;
+  font-style: italic;
+  font-weight: 100 1000;
+}
+
+@font-face {
+  font-family: "Literata";
+  src: url("fonts/Literata-VariableFont_opsz,wght.ttf") format("truetype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 200 900;
+}
+
+@font-face {
+  font-family: "Literata";
+  src: url("fonts/Literata-Italic-VariableFont_opsz,wght.ttf") format("truetype");
+  font-display: swap;
+  font-style: italic;
+  font-weight: 200 900;
+}
