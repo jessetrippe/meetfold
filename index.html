@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Fold — Read at your own pace.</title>
-  <meta name="description" content="Fold is an iPhone RSS reader that keeps downloaded articles locally and loads readable article text automatically.">
+  <title>Fold — A library worth keeping.</title>
+  <meta name="description" content="Follow your favorite writers, read full articles where available, and build a searchable reading library on your iPhone. $4.99 once. No subscription or account.">
   <link rel="icon" href="favicon.png">
   <link rel="stylesheet" href="assets/styles.css">
   <script src="assets/site.js"></script>
@@ -21,7 +21,7 @@
         <span>Fold</span>
       </a>
       <div class="flex items-center gap-2">
-        <a href="#features" class="hidden px-3 py-2 text-sm text-fold-muted hover:text-fold-ink dark:text-fold-darkMuted dark:hover:text-fold-darkInk sm:inline">Features</a>
+        <a href="#inside-fold" class="hidden px-3 py-2 text-sm text-fold-muted hover:text-fold-ink dark:text-fold-darkMuted dark:hover:text-fold-darkInk sm:inline">Inside Fold</a>
         <a href="support.html" class="hidden px-3 py-2 text-sm text-fold-muted hover:text-fold-ink dark:text-fold-darkMuted dark:hover:text-fold-darkInk sm:inline">Support</a>
         <button data-theme-toggle class="rounded-full border border-fold-line px-3 py-2 text-sm text-fold-muted hover:text-fold-ink dark:border-fold-darkLine dark:text-fold-darkMuted dark:hover:text-fold-darkInk">
           <span data-theme-label>Dark</span>
@@ -32,179 +32,89 @@
 
   <main>
 
-    <!-- Hero -->
-    <section class="mx-auto grid max-w-6xl items-center gap-14 px-5 py-16 lg:grid-cols-[1.1fr_0.9fr] lg:py-24">
+    <section class="story-wrap hero-story">
       <div>
-        <img src="assets/icon-light.png" alt="" class="mb-8 h-16 w-16 rounded-2xl shadow-lg shadow-stone-950/10 dark:hidden sm:h-20 sm:w-20">
-        <img src="assets/icon-dark.png" alt="" class="mb-8 hidden h-16 w-16 rounded-2xl shadow-lg shadow-stone-950/30 dark:block sm:h-20 sm:w-20">
-        <p class="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-fold-ember">iPhone RSS Reader</p>
-        <h1 class="font-serif text-5xl italic font-normal leading-[1.08] text-fold-ink dark:text-fold-darkInk sm:text-6xl lg:text-[5rem]">Read at your<br>own pace.</h1>
-        <p class="mt-6 max-w-lg text-lg leading-8 text-fold-muted dark:text-fold-darkMuted">Fold saves articles when your feeds refresh and keeps them after they leave the feed. Open an article and read, search your archive, and keep favorites close at hand.</p>
-        <div class="mt-8 flex flex-wrap items-center gap-3">
-          <span class="inline-flex rounded-full bg-fold-ember px-5 py-3 text-sm font-semibold text-white">Coming soon to the App Store</span>
-          <span class="text-sm text-fold-muted dark:text-fold-darkMuted">$4.99 · No account required</span>
-        </div>
+        <p class="eyebrow">Fold · RSS for iPhone</p>
+        <h1>Your favorite writing.<br><em>A library worth keeping.</em></h1>
+        <p class="story-intro">Follow the writers you love. Read full articles where available, keep downloaded posts after they leave the feed, and find that piece you remember months later.</p>
+        <p class="price-line">$4.99 once <span>No subscription · No account</span></p>
+        <p class="launch-status">Coming soon to the App Store</p>
+        <a class="story-button" href="#inside-fold">See Fold in action <span aria-hidden="true">↓</span></a>
       </div>
-
-      <!-- App screenshot -->
-      <figure class="mx-auto w-full max-w-[15rem] sm:max-w-[16rem] lg:max-w-[17rem]">
-        <div class="rounded-[3rem] border border-fold-line bg-fold-surface p-2.5 shadow-2xl shadow-stone-950/20 dark:border-fold-darkLine dark:bg-fold-darkSurface">
-          <img src="assets/screenshots/reader.png" width="660" height="1434" alt="Fold’s reader showing an article set in Literata, with the feed name, author, date, and read time above the text" class="block w-full rounded-[2.5rem]">
-        </div>
+      <figure class="hero-reader">
+        <div class="phone-frame"><img src="assets/screenshots/reader.png" width="660" height="1434" alt="Fold’s reader with an article in Literata, its source, author, and reading time" fetchpriority="high"></div>
+        <figcaption>Space for the words. A place to return to.</figcaption>
       </figure>
     </section>
 
-    <!-- Archive callout -->
-    <section class="border-y border-fold-line bg-fold-surface dark:border-fold-darkLine dark:bg-fold-darkSurface">
-      <div class="mx-auto max-w-6xl px-5 py-20">
-        <div class="grid gap-10 lg:grid-cols-2 lg:items-start">
-          <div>
-            <p class="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-fold-ember">Local archive</p>
-            <h2 class="text-3xl font-bold leading-tight text-fold-ink dark:text-fold-darkInk sm:text-4xl">Most RSS readers forget.</h2>
-            <p class="mt-1 font-serif text-3xl italic leading-tight text-fold-ember sm:text-4xl">Fold remembers.</p>
-          </div>
-          <p class="font-serif text-lg leading-8 text-fold-muted dark:text-fold-darkMuted">Feed websites usually expose a rolling window of recent posts. Fold keeps the articles it downloads, so you can return to them later. Background refresh is scheduled by iOS; articles that disappear before a refresh may not be captured.</p>
+    <section id="inside-fold" class="story-band">
+      <div class="story-wrap story-pair">
+        <div class="story-copy">
+          <p class="eyebrow">01 / Keep & find</p>
+          <h2>Find that article you read <em>months ago.</em></h2>
+          <p>Remember the idea, but not the headline? Search the words inside your saved articles, along with titles, writers, and feeds.</p>
+          <p>Fold keeps downloaded posts after they leave the feed. Your reading has somewhere to live.</p>
         </div>
-      </div>
-    </section>
-
-    <!-- Screenshots -->
-    <section class="mx-auto max-w-6xl px-5 pt-20" aria-labelledby="screens-heading">
-      <div class="mb-10 max-w-2xl">
-        <p class="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-fold-ember">Inside Fold</p>
-        <h2 id="screens-heading" class="font-serif text-4xl italic leading-tight text-fold-ink dark:text-fold-darkInk sm:text-5xl">Quiet by design.</h2>
-      </div>
-      <div class="-mx-5 flex snap-x snap-mandatory scroll-px-5 gap-5 overflow-x-auto px-5 pb-4 lg:mx-0 lg:scroll-px-0 lg:grid lg:grid-cols-4 lg:gap-6 lg:overflow-visible lg:px-0">
-        <figure class="w-56 shrink-0 snap-start sm:w-64 lg:w-auto">
-          <img src="assets/screenshots/library.png" width="660" height="1434" loading="lazy" alt="Fold’s library with All Items, Starred, and five feeds with unread counts" class="block w-full rounded-[2rem] border border-fold-line shadow-xl shadow-stone-950/10 dark:border-fold-darkLine">
-          <figcaption class="mt-4 text-sm leading-6 text-fold-muted dark:text-fold-darkMuted"><span class="font-semibold text-fold-ink dark:text-fold-darkInk">Your library.</span> All Items, Starred, and every feed with its unread count.</figcaption>
-        </figure>
-        <figure class="w-56 shrink-0 snap-start sm:w-64 lg:w-auto">
-          <img src="assets/screenshots/articles.png" width="660" height="1434" loading="lazy" alt="An article list grouped under Today and Yesterday" class="block w-full rounded-[2rem] border border-fold-line shadow-xl shadow-stone-950/10 dark:border-fold-darkLine">
-          <figcaption class="mt-4 text-sm leading-6 text-fold-muted dark:text-fold-darkMuted"><span class="font-semibold text-fold-ink dark:text-fold-darkInk">Grouped by day.</span> Swipe right to mark read, left to star.</figcaption>
-        </figure>
-        <figure class="w-56 shrink-0 snap-start sm:w-64 lg:w-auto">
-          <img src="assets/screenshots/stats.png" width="660" height="1434" loading="lazy" alt="Reading stats showing a 12-day streak, best streak, starred count, and library size" class="block w-full rounded-[2rem] border border-fold-line shadow-xl shadow-stone-950/10 dark:border-fold-darkLine">
-          <figcaption class="mt-4 text-sm leading-6 text-fold-muted dark:text-fold-darkMuted"><span class="font-semibold text-fold-ink dark:text-fold-darkInk">A gentle streak.</span> Articles opened, favorites starred, and your best run.</figcaption>
-        </figure>
-        <figure class="w-56 shrink-0 snap-start sm:w-64 lg:w-auto">
-          <img src="assets/screenshots/settings.png" width="660" height="1434" loading="lazy" alt="Settings with feeds, mute keywords, appearance, and reader options" class="block w-full rounded-[2rem] border border-fold-line shadow-xl shadow-stone-950/10 dark:border-fold-darkLine">
-          <figcaption class="mt-4 text-sm leading-6 text-fold-muted dark:text-fold-darkMuted"><span class="font-semibold text-fold-ink dark:text-fold-darkInk">Make it yours.</span> Light or dark, serif or sans, four text sizes, and mute keywords.</figcaption>
+        <figure class="library-demo">
+          <div class="demo-heading"><span>Your reading library</span><span class="sample-label">Interactive example</span></div>
+          <label for="library-query">Find a word you remember</label>
+          <input id="library-query" type="search" value="attention" placeholder="Try attention, garden, or design" autocomplete="off" aria-describedby="library-hint">
+          <p id="library-hint" class="demo-hint">Sample articles · Search “attention”, “garden”, or “design”.</p>
+          <div id="library-results" aria-live="polite"></div>
+          <figcaption>Illustrated with sample content. Fold searches the articles saved in your library.</figcaption>
         </figure>
       </div>
     </section>
 
-    <!-- Features -->
-    <section id="features" class="mx-auto max-w-6xl px-5 py-20">
-      <div class="mb-10 max-w-2xl">
-        <p class="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-fold-ember">Features</p>
-        <h2 class="font-serif text-4xl italic leading-tight text-fold-ink dark:text-fold-darkInk sm:text-5xl">Built for readers<br>who mean it.</h2>
-      </div>
-      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-
-        <article class="rounded-xl border border-fold-line bg-fold-surface p-5 dark:border-fold-darkLine dark:bg-fold-darkSurface">
-          <div class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-orange-100 text-fold-ember dark:bg-stone-900">
-            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M4.5 2A1.5 1.5 0 0 0 3 3.5v13A1.5 1.5 0 0 0 4.5 18h11a1.5 1.5 0 0 0 1.5-1.5V7.621a1.5 1.5 0 0 0-.44-1.06l-4.12-4.122A1.5 1.5 0 0 0 11.378 2H4.5Zm2.25 9.5a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5Zm0 3a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5Z" clip-rule="evenodd"/></svg>
-          </div>
-          <h3 class="font-semibold">Full text, automatically</h3>
-          <p class="mt-2 text-sm leading-6 text-fold-muted dark:text-fold-darkMuted">Saved text appears the moment you open an article. When a feed sends only a preview, Fold loads the rest where the publisher allows it.</p>
-        </article>
-
-        <article class="rounded-xl border border-fold-line bg-fold-surface p-5 dark:border-fold-darkLine dark:bg-fold-darkSurface">
-          <div class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-orange-100 text-fold-ember dark:bg-stone-900">
-            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10.75 3.351A8.978 8.978 0 0 1 15.5 2c.898 0 1.763.131 2.579.376a.75.75 0 0 1 .546.721v11.165a.75.75 0 0 1-.95.722A7.507 7.507 0 0 0 15.5 14.5a7.47 7.47 0 0 0-4.75 1.699V3.351Z"/><path d="M9.25 3.351A8.978 8.978 0 0 0 4.5 2c-.898 0-1.763.131-2.579.376a.75.75 0 0 0-.546.721v11.165a.75.75 0 0 0 .95.722A7.507 7.507 0 0 1 4.5 14.5c1.79 0 3.443.627 4.75 1.699V3.351Z"/></svg>
-          </div>
-          <h3 class="font-semibold">Comfortable reading</h3>
-          <p class="mt-2 text-sm leading-6 text-fold-muted dark:text-fold-darkMuted">Literata or DM Sans, four text sizes, and light or dark appearance. Fold remembers where you left off in each article.</p>
-        </article>
-
-        <article class="rounded-xl border border-fold-line bg-fold-surface p-5 dark:border-fold-darkLine dark:bg-fold-darkSurface">
-          <div class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-orange-100 text-fold-ember dark:bg-stone-900">
-            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M1 11.27c0-.246.033-.492.099-.73l1.523-5.521A2.75 2.75 0 0 1 5.273 3h9.454a2.75 2.75 0 0 1 2.651 2.019l1.523 5.52c.066.239.099.485.099.732V15a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3.73Zm3.068-5.852A1.25 1.25 0 0 1 5.273 4.5h9.454a1.25 1.25 0 0 1 1.205.918l1.523 5.52.015.062H14a1 1 0 0 0-.86.49l-.606 1.02a1 1 0 0 1-.86.49H8.236a1 1 0 0 1-.894-.553l-.448-.894A1 1 0 0 0 6 11H2.53l.015-.062 1.523-5.52Z" clip-rule="evenodd"/></svg>
-          </div>
-          <h3 class="font-semibold">Local archive</h3>
-          <p class="mt-2 text-sm leading-6 text-fold-muted dark:text-fold-darkMuted">Downloaded articles stay after a feed rolls over. Unsubscribing removes that feed’s unstarred articles and keeps starred articles with their publisher attribution.</p>
-        </article>
-
-        <article class="rounded-xl border border-fold-line bg-fold-surface p-5 dark:border-fold-darkLine dark:bg-fold-darkSurface">
-          <div class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-orange-100 text-fold-ember dark:bg-stone-900">
-            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11ZM2 9a7 7 0 1 1 12.452 4.391l3.328 3.329a.75.75 0 1 1-1.06 1.06l-3.329-3.328A7 7 0 0 1 2 9Z" clip-rule="evenodd"/></svg>
-          </div>
-          <h3 class="font-semibold">Smart search</h3>
-          <p class="mt-2 text-sm leading-6 text-fold-muted dark:text-fold-darkMuted">Search titles, article text, authors, and feeds across your whole library, with an optional date range.</p>
-        </article>
-
-        <article class="rounded-xl border border-fold-line bg-fold-surface p-5 dark:border-fold-darkLine dark:bg-fold-darkSurface">
-          <div class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-orange-100 text-fold-ember dark:bg-stone-900">
-            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M13.22 2.47a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 1 1-1.06-1.06l1.97-1.97H3.5a.75.75 0 0 1 0-1.5h11.69l-1.97-1.97a.75.75 0 0 1 0-1.06Zm-6.44 7.5a.75.75 0 0 1 0 1.06L4.81 13h11.69a.75.75 0 0 1 0 1.5H4.81l1.97 1.97a.75.75 0 1 1-1.06 1.06l-3.25-3.25a.75.75 0 0 1 0-1.06l3.25-3.25a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd"/></svg>
-          </div>
-          <h3 class="font-semibold">OPML import & export</h3>
-          <p class="mt-2 text-sm leading-6 text-fold-muted dark:text-fold-darkMuted">Move your feed list to and from any other RSS reader. No lock-in.</p>
-        </article>
-
-        <article class="rounded-xl border border-fold-line bg-fold-surface p-5 dark:border-fold-darkLine dark:bg-fold-darkSurface">
-          <div class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-orange-100 text-fold-ember dark:bg-stone-900">
-            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M15.5 2A2.5 2.5 0 0 1 18 4.5v11a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 2 15.5v-11A2.5 2.5 0 0 1 4.5 2h11ZM5.75 13.5a.75.75 0 0 0 .75-.75v-2.5a.75.75 0 0 0-1.5 0v2.5c0 .414.336.75.75.75Zm4.25 0a.75.75 0 0 0 .75-.75v-5.5a.75.75 0 0 0-1.5 0v5.5c0 .414.336.75.75.75Zm4.25 0a.75.75 0 0 0 .75-.75v-8a.75.75 0 0 0-1.5 0v8c0 .414.336.75.75.75Z"/></svg>
-          </div>
-          <h3 class="font-semibold">Reading streaks</h3>
-          <p class="mt-2 text-sm leading-6 text-fold-muted dark:text-fold-darkMuted">See your current and best streaks, articles opened, and library stats. Opening an article counts toward the day.</p>
-        </article>
-
-        <article class="rounded-xl border border-fold-line bg-fold-surface p-5 dark:border-fold-darkLine dark:bg-fold-darkSurface">
-          <div class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-orange-100 text-fold-ember dark:bg-stone-900">
-            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M2.628 1.601C5.028 1.206 7.49 1 10 1s4.973.206 7.372.601a.75.75 0 0 1 .628.74v2.288a2.25 2.25 0 0 1-.659 1.59l-4.682 4.683a2.25 2.25 0 0 0-.659 1.59v3.037c0 .684-.31 1.33-.844 1.757l-1.937 1.55A.75.75 0 0 1 8 18.25v-5.757a2.25 2.25 0 0 0-.659-1.591L2.659 6.22A2.25 2.25 0 0 1 2 4.629V2.34a.75.75 0 0 1 .628-.74Z" clip-rule="evenodd"/></svg>
-          </div>
-          <h3 class="font-semibold">Mute keywords</h3>
-          <p class="mt-2 text-sm leading-6 text-fold-muted dark:text-fold-darkMuted">Hide articles whose titles match a keyword, in every feed. Muted articles stay in your library and can be restored.</p>
-        </article>
-
-        <article class="rounded-xl border border-fold-line bg-fold-surface p-5 dark:border-fold-darkLine dark:bg-fold-darkSurface">
-          <div class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-orange-100 text-fold-ember dark:bg-stone-900">
-            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M13 4.5a2.5 2.5 0 1 1 .702 1.737L6.97 9.604a2.518 2.518 0 0 1 0 .792l6.733 3.367a2.5 2.5 0 1 1-.671 1.341l-6.733-3.367a2.5 2.5 0 1 1 0-3.474l6.733-3.366A2.52 2.52 0 0 1 13 4.5Z"/></svg>
-          </div>
-          <h3 class="font-semibold">Share & AI-ready</h3>
-          <p class="mt-2 text-sm leading-6 text-fold-muted dark:text-fold-darkMuted">Copy or share saved article text, preserving paragraphs and an optional custom prompt prefix.</p>
-        </article>
-
+    <section class="story-wrap story-pair reading-story">
+      <figure class="paper-excerpt">
+        <p class="paper-source">Field Notes · Sample article</p>
+        <h3>The pleasure of noticing small things</h3>
+        <p>There is a particular kind of attention that begins when we stop looking for something new. The same street, the same window, the same patch of light can become interesting again.</p>
+        <p>On a recent walk, I noticed how the morning light crossed a row of old buildings. Nothing about the street had changed. What changed was the time I gave it.</p>
+        <div class="paper-rule"></div>
+        <figcaption>A little room to slow down.</figcaption>
+      </figure>
+      <div class="story-copy">
+        <p class="eyebrow">02 / Read</p>
+        <h2>Read at <em>your own pace.</em></h2>
+        <p>Open an article and settle in. Saved text appears immediately; Fold loads missing full text automatically where the publisher makes it available.</p>
+        <p>Choose light or dark, serif or sans, and a text size that feels right. Your place is remembered when you come back.</p>
+        <p class="small-note">Saved text is available offline, too.</p>
       </div>
     </section>
 
-    <!-- Privacy section -->
-    <section class="border-y border-fold-line bg-fold-surface dark:border-fold-darkLine dark:bg-fold-darkSurface">
-      <div class="mx-auto max-w-6xl px-5 py-20">
-        <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
-          <div>
-            <p class="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-fold-ember">Privacy</p>
-            <h2 class="text-3xl font-bold leading-tight text-fold-ink dark:text-fold-darkInk sm:text-4xl">No account.<br>No backend.<br>No tracking.</h2>
-            <p class="mt-6 font-serif text-lg leading-8 text-fold-muted dark:text-fold-darkMuted">Fold has no collection server or account system. Your library is stored on your iPhone. Feed, article, image, and favicon requests connect to publishers and their media hosts, which receive ordinary network information such as your IP address.</p>
-          </div>
-          <div class="space-y-3">
-            <div class="flex items-start gap-4 rounded-xl border border-fold-line bg-fold-bg p-5 dark:border-fold-darkLine dark:bg-fold-darkBg">
-              <svg class="mt-0.5 h-5 w-5 shrink-0 text-fold-ember" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10.339 2.237a.75.75 0 0 0-.678 0 21.889 21.889 0 0 1-6.082 2.275.75.75 0 0 0-.579.73v4.958c0 4.02 2.41 7.655 6.112 9.222a.75.75 0 0 0 .576 0A9.994 9.994 0 0 0 16 10.2V5.242a.75.75 0 0 0-.579-.73 21.889 21.889 0 0 1-6.082-2.275Zm3.477 6.347a.75.75 0 0 0-1.132-.987L9.183 11.61 7.28 9.707a.75.75 0 0 0-1.06 1.06l2.47 2.47a.75.75 0 0 0 1.095-.035l4.03-4.617Z" clip-rule="evenodd"/></svg>
-              <div>
-                <p class="font-semibold">No account required</p>
-                <p class="mt-1 text-sm text-fold-muted dark:text-fold-darkMuted">Download and start reading. No sign-up, no email, no password.</p>
-              </div>
-            </div>
-            <div class="flex items-start gap-4 rounded-xl border border-fold-line bg-fold-bg p-5 dark:border-fold-darkLine dark:bg-fold-darkBg">
-              <svg class="mt-0.5 h-5 w-5 shrink-0 text-fold-ember" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 12.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/><path fill-rule="evenodd" d="M.664 10.59a1.651 1.651 0 0 1 0-1.186A10.004 10.004 0 0 1 10 3c4.257 0 7.893 2.66 9.336 6.41.147.381.146.804 0 1.186A10.004 10.004 0 0 1 10 17c-4.257 0-7.893-2.66-9.336-6.41ZM14 10a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" clip-rule="evenodd"/></svg>
-              <div>
-                <p class="font-semibold">No analytics or tracking</p>
-                <p class="mt-1 text-sm text-fold-muted dark:text-fold-darkMuted">Fold includes no analytics or advertising SDKs. Publishers and media hosts have their own privacy policies.</p>
-              </div>
-            </div>
-            <div class="flex items-start gap-4 rounded-xl border border-fold-line bg-fold-bg p-5 dark:border-fold-darkLine dark:bg-fold-darkBg">
-              <svg class="mt-0.5 h-5 w-5 shrink-0 text-fold-ember" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M2 10a8 8 0 1 1 16 0 8 8 0 0 1-16 0Zm6.39-2.908a.75.75 0 0 1 .766.027l3.5 2.25a.75.75 0 0 1 0 1.262l-3.5 2.25A.75.75 0 0 1 8 12.25v-4.5a.75.75 0 0 1 .39-.658Z" clip-rule="evenodd"/></svg>
-              <div>
-                <p class="font-semibold">Works offline</p>
-                <p class="mt-1 text-sm text-fold-muted dark:text-fold-darkMuted">Saved article text is available offline. Images are cached automatically, but uncached images and original websites may need a connection.</p>
-              </div>
-            </div>
-          </div>
+    <section class="story-band">
+      <div class="story-wrap story-pair">
+        <div class="story-copy">
+          <p class="eyebrow">03 / Share</p>
+          <h2>Take the words <em>with you.</em></h2>
+          <p>Send readable article text to Notes, an email, or your favorite AI tool—with the title and source included.</p>
+          <p>Add your own reusable prompt if you want a summary, questions to consider, or a starting point for your notes.</p>
+          <p class="small-note">You choose the destination. Fold doesn’t run an AI service.</p>
         </div>
+        <figure class="share-demo">
+          <div class="demo-heading"><span>Ready to take with you</span><span class="sample-label">Example text</span></div>
+          <label class="prompt-option"><input type="checkbox" id="include-prompt" checked> Include a custom prompt</label>
+          <div id="share-preview" class="share-preview"></div>
+          <div class="copy-row"><button id="copy-example" class="story-button" type="button">Copy example text</button><span id="copy-status" role="status"></span></div>
+          <figcaption>Try copying this sample into Notes, email, or an AI tool. In Fold, you share the article text saved on your device.</figcaption>
+        </figure>
       </div>
     </section>
 
+    <section id="features" class="story-wrap essentials">
+      <p class="eyebrow">The everyday details</p>
+      <h2>Make yourself <em>at home.</em></h2>
+      <div class="essentials-grid">
+        <article><h3>Bring your subscriptions</h3><p>Import your feeds with OPML. Export them whenever you like.</p></article>
+        <article><h3>Keep favorites close</h3><p>Star a piece to return to. Starred articles stay even when you unsubscribe.</p></article>
+        <article><h3>Quiet the noise</h3><p>Mute keywords across your feeds. Restore hidden articles whenever you want.</p></article>
+        <article><h3>See your reading grow</h3><p>A gentle streak, articles opened, and library stats, all in Settings.</p></article>
+        <article><h3>Keep a backup</h3><p>Export your feeds, articles, and read/starred choices in a Fold backup.</p></article>
+        <article><h3>No account to manage</h3><p>Your library lives on your iPhone. No Fold account, subscription, or analytics.</p></article>
+      </div>
+    </section>
     <!-- FAQ -->
     <section class="border-t border-fold-line dark:border-fold-darkLine">
       <div class="mx-auto max-w-4xl px-5 py-20">
@@ -224,7 +134,7 @@
               <span>Does Fold delete old articles?</span>
               <svg class="h-5 w-5 shrink-0 text-fold-ember transition-transform group-open:rotate-90" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/></svg>
             </summary>
-            <p class="mt-3 font-serif leading-7 text-fold-muted dark:text-fold-darkMuted">Feed refreshes do not remove downloaded articles. Unsubscribing removes unstarred articles from that feed and keeps starred articles. Deleting the app removes its local library unless you restore a backup.</p>
+            <p class="mt-3 font-serif leading-7 text-fold-muted dark:text-fold-darkMuted">Fold saves posts when feeds successfully refresh. iOS controls background refresh timing, so posts that disappear before a refresh may not be captured. Feed refreshes do not remove downloaded articles. Unsubscribing removes unstarred articles from that feed and keeps starred articles. Deleting the app removes its local library unless you restore a backup.</p>
           </details>
 
           <details class="group py-5">
@@ -272,7 +182,7 @@
               <span>Can I use Fold with AI tools?</span>
               <svg class="h-5 w-5 shrink-0 text-fold-ember transition-transform group-open:rotate-90" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/></svg>
             </summary>
-            <p class="mt-3 font-serif leading-7 text-fold-muted dark:text-fold-darkMuted">Fold can share the article text it has saved, or the original link. Preview-only content is identified when sharing. You can set a custom prefix (like a prompt) that gets prepended every time you share, so pasting into ChatGPT, Claude, or any AI tool takes one tap.</p>
+            <p class="mt-3 font-serif leading-7 text-fold-muted dark:text-fold-darkMuted">Fold can share the article text it has saved, or the original link. Preview-only content is identified when sharing. You can set a custom prefix (like a prompt) that gets prepended every time you share, ready to paste into the tool you choose.</p>
           </details>
 
           <details class="group py-5">
@@ -287,17 +197,15 @@
       </div>
     </section>
 
-    <!-- Footer CTA -->
-    <section class="border-t border-fold-line bg-fold-surface dark:border-fold-darkLine dark:bg-fold-darkSurface">
-      <div class="mx-auto max-w-4xl px-5 py-24 text-center">
-        <h2 class="font-serif text-4xl italic leading-snug text-fold-ink dark:text-fold-darkInk sm:text-5xl">Make time<br>for reading.</h2>
-        <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
-          <span class="inline-flex rounded-full bg-fold-ember px-6 py-3 font-semibold text-white">Coming soon to the App Store</span>
-          <span class="text-sm text-fold-muted dark:text-fold-darkMuted">$4.99 · No account required</span>
-        </div>
+    <section class="story-band closing-story">
+      <div class="story-wrap">
+        <p class="eyebrow">Your next good read belongs here</p>
+        <h2>Follow your curiosity.<br><em>Keep what you find.</em></h2>
+        <p class="price-line">$4.99 once <span>No subscription · No account</span></p>
+        <p class="launch-status">Coming soon for iPhone · iOS 26.4 or later</p>
+        <a class="story-button" href="#inside-fold">Explore Fold <span aria-hidden="true">↑</span></a>
       </div>
     </section>
-
   </main>
 
   <footer class="border-t border-fold-line py-10 dark:border-fold-darkLine">
@@ -311,5 +219,6 @@
     </div>
   </footer>
 
+  <script src="assets/home.js" defer></script>
 </body>
 </html>
