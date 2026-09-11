@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Fold — Read everything. Miss nothing.</title>
-  <meta name="description" content="Fold is an iPhone RSS reader that stores every article locally, fetches full article text, and keeps your reading library private.">
+  <title>Fold — Read at your own pace.</title>
+  <meta name="description" content="Fold is an iPhone RSS reader that keeps downloaded articles locally and loads readable article text automatically.">
   <link rel="icon" href="favicon.png">
   <link rel="stylesheet" href="assets/styles.css">
   <script src="assets/site.js"></script>
@@ -38,8 +38,8 @@
         <img src="assets/icon-light.png" alt="" class="mb-8 h-16 w-16 rounded-2xl shadow-lg shadow-stone-950/10 dark:hidden sm:h-20 sm:w-20">
         <img src="assets/icon-dark.png" alt="" class="mb-8 hidden h-16 w-16 rounded-2xl shadow-lg shadow-stone-950/30 dark:block sm:h-20 sm:w-20">
         <p class="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-fold-ember">iPhone RSS Reader</p>
-        <h1 class="font-serif text-5xl italic font-normal leading-[1.08] text-fold-ink dark:text-fold-darkInk sm:text-6xl lg:text-[5rem]">Read everything.<br>Miss nothing.</h1>
-        <p class="mt-6 max-w-lg text-lg leading-8 text-fold-muted dark:text-fold-darkMuted">Fold captures every article the moment it arrives — so nothing disappears when a feed rolls over. Your library stays on your device, searchable, available offline, and entirely yours.</p>
+        <h1 class="font-serif text-5xl italic font-normal leading-[1.08] text-fold-ink dark:text-fold-darkInk sm:text-6xl lg:text-[5rem]">Read at your<br>own pace.</h1>
+        <p class="mt-6 max-w-lg text-lg leading-8 text-fold-muted dark:text-fold-darkMuted">Fold saves articles when your feeds refresh and keeps them after they leave the feed. Open an article and read, search your archive, and keep favorites close at hand.</p>
         <div class="mt-8 flex flex-wrap items-center gap-3">
           <span class="inline-flex rounded-full bg-fold-ember px-5 py-3 text-sm font-semibold text-white">Coming soon to the App Store</span>
           <span class="text-sm text-fold-muted dark:text-fold-darkMuted">$4.99 · No account required</span>
@@ -61,7 +61,7 @@
               <p class="font-serif text-sm leading-6 text-fold-muted dark:text-fold-darkMuted">What's remarkable isn't the hardware — it's the continuity of purpose.</p>
             </div>
             <div class="flex items-center justify-between border-t border-fold-line px-4 py-3 dark:border-fold-darkLine">
-              <span class="rounded-full border border-fold-line px-3 py-1.5 text-[11px] text-fold-muted dark:border-fold-darkLine dark:text-fold-darkMuted">Reader View</span>
+              <span class="rounded-full border border-fold-line px-3 py-1.5 text-[11px] text-fold-muted dark:border-fold-darkLine dark:text-fold-darkMuted">Reading</span>
               <span class="text-xs text-fold-muted dark:text-fold-darkMuted">Aa</span>
             </div>
           </div>
@@ -78,7 +78,7 @@
             <h2 class="text-3xl font-bold leading-tight text-fold-ink dark:text-fold-darkInk sm:text-4xl">Most RSS readers forget.</h2>
             <p class="mt-1 font-serif text-3xl italic leading-tight text-fold-ember sm:text-4xl">Fold remembers.</p>
           </div>
-          <p class="font-serif text-lg leading-8 text-fold-muted dark:text-fold-darkMuted">Most apps show a rolling window — posts vanish from the feed after days or weeks. Fold captures articles the moment they arrive and stores them locally. Whether you're catching up after a vacation or hunting down a piece from months ago, it's still there.</p>
+          <p class="font-serif text-lg leading-8 text-fold-muted dark:text-fold-darkMuted">Feed websites usually expose a rolling window of recent posts. Fold keeps the articles it downloads, so you can return to them later. Background refresh is scheduled by iOS; articles that disappear before a refresh may not be captured.</p>
         </div>
       </div>
     </section>
@@ -96,7 +96,7 @@
             <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M4.5 2A1.5 1.5 0 0 0 3 3.5v13A1.5 1.5 0 0 0 4.5 18h11a1.5 1.5 0 0 0 1.5-1.5V7.621a1.5 1.5 0 0 0-.44-1.06l-4.12-4.122A1.5 1.5 0 0 0 11.378 2H4.5Zm2.25 9.5a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5Zm0 3a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5Z" clip-rule="evenodd"/></svg>
           </div>
           <h3 class="font-semibold">Full articles</h3>
-          <p class="mt-2 text-sm leading-6 text-fold-muted dark:text-fold-darkMuted">Fetches complete article text from feeds that only publish summaries.</p>
+          <p class="mt-2 text-sm leading-6 text-fold-muted dark:text-fold-darkMuted">Loads available article text when a feed provides only a preview. Some publishers require reading on their site.</p>
         </article>
 
         <article class="rounded-xl border border-fold-line bg-fold-surface p-5 dark:border-fold-darkLine dark:bg-fold-darkSurface">
@@ -104,15 +104,15 @@
             <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10.75 16.82A7.462 7.462 0 0 1 10 17c-.25 0-.496-.014-.74-.043a.75.75 0 0 1-.653-.782V6.565l-2.051 1.369a.75.75 0 1 1-.832-1.248l3-2a.75.75 0 0 1 .832 0l3 2a.75.75 0 0 1-.832 1.248L10.75 6.565v10.254a.75.75 0 0 1-.653.782Z"/><path d="M2.5 2a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 .5.5h15a.5.5 0 0 0 .5-.5v-15a.5.5 0 0 0-.5-.5h-15Z"/></svg>
           </div>
           <h3 class="font-semibold">Reader View</h3>
-          <p class="mt-2 text-sm leading-6 text-fold-muted dark:text-fold-darkMuted">Tap to fetch the full article from any feed that only publishes summaries. Presented clean and full-screen, without leaving Fold.</p>
+          <p class="mt-2 text-sm leading-6 text-fold-muted dark:text-fold-darkMuted">Saved text appears immediately. Fold loads missing article text automatically when the publisher makes it available, with a simple link to the original when needed.</p>
         </article>
 
         <article class="rounded-xl border border-fold-line bg-fold-surface p-5 dark:border-fold-darkLine dark:bg-fold-darkSurface">
           <div class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-orange-100 text-fold-ember dark:bg-stone-900">
             <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M1 11.27c0-.246.033-.492.099-.73l1.523-5.521A2.75 2.75 0 0 1 5.273 3h9.454a2.75 2.75 0 0 1 2.651 2.019l1.523 5.52c.066.239.099.485.099.732V15a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3.73Zm3.068-5.852A1.25 1.25 0 0 1 5.273 4.5h9.454a1.25 1.25 0 0 1 1.205.918l1.523 5.52.015.062H14a1 1 0 0 0-.86.49l-.606 1.02a1 1 0 0 1-.86.49H8.236a1 1 0 0 1-.894-.553l-.448-.894A1 1 0 0 0 6 11H2.53l.015-.062 1.523-5.52Z" clip-rule="evenodd"/></svg>
           </div>
-          <h3 class="font-semibold">Permanent archive</h3>
-          <p class="mt-2 text-sm leading-6 text-fold-muted dark:text-fold-darkMuted">Articles stay in your local library until you remove the feed. Nothing is ever auto-deleted.</p>
+          <h3 class="font-semibold">Local archive</h3>
+          <p class="mt-2 text-sm leading-6 text-fold-muted dark:text-fold-darkMuted">Downloaded articles stay after a feed rolls over. Unsubscribing removes that feed’s unstarred articles and keeps starred articles with their publisher attribution.</p>
         </article>
 
         <article class="rounded-xl border border-fold-line bg-fold-surface p-5 dark:border-fold-darkLine dark:bg-fold-darkSurface">
@@ -152,7 +152,7 @@
             <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M13 4.5a2.5 2.5 0 1 1 .702 1.737L6.97 9.604a2.518 2.518 0 0 1 0 .792l6.733 3.367a2.5 2.5 0 1 1-.671 1.341l-6.733-3.367a2.5 2.5 0 1 1 0-3.474l6.733-3.366A2.52 2.52 0 0 1 13 4.5Z"/></svg>
           </div>
           <h3 class="font-semibold">Share & AI-ready</h3>
-          <p class="mt-2 text-sm leading-6 text-fold-muted dark:text-fold-darkMuted">Share full article text with a custom prompt prefix — ready to drop into any AI tool.</p>
+          <p class="mt-2 text-sm leading-6 text-fold-muted dark:text-fold-darkMuted">Copy or share saved article text, preserving paragraphs and an optional custom prompt prefix.</p>
         </article>
 
       </div>
@@ -165,7 +165,7 @@
           <div>
             <p class="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-fold-ember">Privacy</p>
             <h2 class="text-3xl font-bold leading-tight text-fold-ink dark:text-fold-darkInk sm:text-4xl">No account.<br>No backend.<br>No tracking.</h2>
-            <p class="mt-6 font-serif text-lg leading-8 text-fold-muted dark:text-fold-darkMuted">Fold has no server-side component. Your feeds, articles, and reading history live entirely on your device. There's nothing to log in to, nothing being synced to a cloud you don't control, and no one reading over your shoulder.</p>
+            <p class="mt-6 font-serif text-lg leading-8 text-fold-muted dark:text-fold-darkMuted">Fold has no collection server or account system. Your library is stored on your iPhone. Feed, article, image, and favicon requests connect to publishers and their media hosts, which receive ordinary network information such as your IP address.</p>
           </div>
           <div class="space-y-3">
             <div class="flex items-start gap-4 rounded-xl border border-fold-line bg-fold-bg p-5 dark:border-fold-darkLine dark:bg-fold-darkBg">
@@ -179,14 +179,14 @@
               <svg class="mt-0.5 h-5 w-5 shrink-0 text-fold-ember" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 12.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/><path fill-rule="evenodd" d="M.664 10.59a1.651 1.651 0 0 1 0-1.186A10.004 10.004 0 0 1 10 3c4.257 0 7.893 2.66 9.336 6.41.147.381.146.804 0 1.186A10.004 10.004 0 0 1 10 17c-4.257 0-7.893-2.66-9.336-6.41ZM14 10a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" clip-rule="evenodd"/></svg>
               <div>
                 <p class="font-semibold">No analytics or tracking</p>
-                <p class="mt-1 text-sm text-fold-muted dark:text-fold-darkMuted">No analytics SDKs, no crash reporters, no third-party code that phones home.</p>
+                <p class="mt-1 text-sm text-fold-muted dark:text-fold-darkMuted">Fold includes no analytics or advertising SDKs. Publishers and media hosts have their own privacy policies.</p>
               </div>
             </div>
             <div class="flex items-start gap-4 rounded-xl border border-fold-line bg-fold-bg p-5 dark:border-fold-darkLine dark:bg-fold-darkBg">
               <svg class="mt-0.5 h-5 w-5 shrink-0 text-fold-ember" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M2 10a8 8 0 1 1 16 0 8 8 0 0 1-16 0Zm6.39-2.908a.75.75 0 0 1 .766.027l3.5 2.25a.75.75 0 0 1 0 1.262l-3.5 2.25A.75.75 0 0 1 8 12.25v-4.5a.75.75 0 0 1 .39-.658Z" clip-rule="evenodd"/></svg>
               <div>
                 <p class="font-semibold">Works offline</p>
-                <p class="mt-1 text-sm text-fold-muted dark:text-fold-darkMuted">Every article you've loaded is available without a connection. Read on a plane, in a tunnel, anywhere.</p>
+                <p class="mt-1 text-sm text-fold-muted dark:text-fold-darkMuted">Saved article text is available offline. Images are cached automatically, but uncached images and original websites may need a connection.</p>
               </div>
             </div>
           </div>
@@ -213,7 +213,7 @@
               <span>Does Fold delete old articles?</span>
               <svg class="h-5 w-5 shrink-0 text-fold-ember transition-transform group-open:rotate-90" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/></svg>
             </summary>
-            <p class="mt-3 font-serif leading-7 text-fold-muted dark:text-fold-darkMuted">Never. Articles stay until you delete the feed. Starred articles are protected and will never be removed.</p>
+            <p class="mt-3 font-serif leading-7 text-fold-muted dark:text-fold-darkMuted">Feed refreshes do not remove downloaded articles. Unsubscribing removes unstarred articles from that feed and keeps starred articles. Deleting the app removes its local library unless you restore a backup.</p>
           </details>
 
           <details class="group py-5">
@@ -221,7 +221,7 @@
               <span>What is Reader View?</span>
               <svg class="h-5 w-5 shrink-0 text-fold-ember transition-transform group-open:rotate-90" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/></svg>
             </summary>
-            <p class="mt-3 font-serif leading-7 text-fold-muted dark:text-fold-darkMuted">Many feeds only publish a summary. Tap Reader View and Fold fetches the full article text so you can read the whole piece without leaving the app — with calm Literata typography and adjustable font size.</p>
+            <p class="mt-3 font-serif leading-7 text-fold-muted dark:text-fold-darkMuted">Open an article to read its saved text immediately. Fold automatically tries to load missing article text, with calm Literata typography and adjustable, accessible text sizing. You can open the original if more content is only available there.</p>
           </details>
 
           <details class="group py-5">
@@ -229,7 +229,7 @@
               <span>Does it work offline?</span>
               <svg class="h-5 w-5 shrink-0 text-fold-ember transition-transform group-open:rotate-90" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/></svg>
             </summary>
-            <p class="mt-3 font-serif leading-7 text-fold-muted dark:text-fold-darkMuted">Yes. Everything is stored on your device. Any article you've already loaded can be read without an internet connection.</p>
+            <p class="mt-3 font-serif leading-7 text-fold-muted dark:text-fold-darkMuted">Saved text can be read without a connection. Fold caches images as you read and quietly prepares recent starred articles on suitable networks. Media is limited by available cache space and may still need a connection.</p>
           </details>
 
           <details class="group py-5">
@@ -253,7 +253,7 @@
               <span>Is my data private?</span>
               <svg class="h-5 w-5 shrink-0 text-fold-ember transition-transform group-open:rotate-90" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/></svg>
             </summary>
-            <p class="mt-3 font-serif leading-7 text-fold-muted dark:text-fold-darkMuted">Completely. No account, no backend, no analytics. Your feeds, articles, and reading history never leave your device.</p>
+            <p class="mt-3 font-serif leading-7 text-fold-muted dark:text-fold-darkMuted">Fold has no account, collection server, or analytics SDK. Publisher requests go directly to websites and media hosts. Sharing and exporting sends the content you choose to your selected destination.</p>
           </details>
 
           <details class="group py-5">
@@ -261,7 +261,7 @@
               <span>Can I use Fold with AI tools?</span>
               <svg class="h-5 w-5 shrink-0 text-fold-ember transition-transform group-open:rotate-90" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/></svg>
             </summary>
-            <p class="mt-3 font-serif leading-7 text-fold-muted dark:text-fold-darkMuted">Yes. Fold can share the full text of any article — not just the link. You can set a custom prefix (like a prompt) that gets prepended every time you share, so pasting into ChatGPT, Claude, or any AI tool takes one tap.</p>
+            <p class="mt-3 font-serif leading-7 text-fold-muted dark:text-fold-darkMuted">Fold can share the article text it has saved, or the original link. Preview-only content is identified when sharing. You can set a custom prefix (like a prompt) that gets prepended every time you share, so pasting into ChatGPT, Claude, or any AI tool takes one tap.</p>
           </details>
 
           <details class="group py-5">
@@ -269,7 +269,7 @@
               <span>What devices does Fold support?</span>
               <svg class="h-5 w-5 shrink-0 text-fold-ember transition-transform group-open:rotate-90" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/></svg>
             </summary>
-            <p class="mt-3 font-serif leading-7 text-fold-muted dark:text-fold-darkMuted">Currently iPhone (iOS 18 and later). iPad and Mac support are in development.</p>
+            <p class="mt-3 font-serif leading-7 text-fold-muted dark:text-fold-darkMuted">iPhone with iOS 26.4 or later. iPad, Mac, and sync are deferred beyond the initial release.</p>
           </details>
 
         </div>
@@ -279,7 +279,7 @@
     <!-- Footer CTA -->
     <section class="border-t border-fold-line bg-fold-surface dark:border-fold-darkLine dark:bg-fold-darkSurface">
       <div class="mx-auto max-w-4xl px-5 py-24 text-center">
-        <h2 class="font-serif text-4xl italic leading-snug text-fold-ink dark:text-fold-darkInk sm:text-5xl">Start reading without<br>missing a thing.</h2>
+        <h2 class="font-serif text-4xl italic leading-snug text-fold-ink dark:text-fold-darkInk sm:text-5xl">Make time<br>for reading.</h2>
         <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
           <span class="inline-flex rounded-full bg-fold-ember px-6 py-3 font-semibold text-white">Coming soon to the App Store</span>
           <span class="text-sm text-fold-muted dark:text-fold-darkMuted">$4.99 · No account required</span>
