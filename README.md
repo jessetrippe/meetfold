@@ -27,4 +27,4 @@ python3 -m http.server 8080
 
 - Replace the “Coming soon” CTA with the live App Store URL.
 - Add official App Store badge artwork from Apple.
-- Add real iPhone screenshots to `assets/screenshots/`.
+- Review `assets/screenshots/` against the final App Store screenshot set; they are 660 px wide copies of Fold's fixture renders (sample content, no real publisher text).
