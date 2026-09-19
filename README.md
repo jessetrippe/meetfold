@@ -23,8 +23,7 @@ python3 -m http.server 8080
 - `terms.html` — terms of use
 - `assets/` — shared styles, local DM Sans fonts, light/dark app icons, and future screenshots
 
-## TODO Before Launch
+## Launch Follow-ups
 
-- Replace the “Coming soon” CTA with the live App Store URL.
-- Add official App Store badge artwork from Apple.
+- Optionally swap the App Store buttons for Apple’s official badge artwork.
 - Review `assets/screenshots/` against the final App Store screenshot set; they are 660 px wide copies of Fold's fixture renders (sample content, no real publisher text).

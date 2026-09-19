@@ -72,6 +72,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
 .dark .launch-status { color: #bdb5ac; }
 .story-button { display: inline-flex; align-items: center; justify-content: center; gap: 20px; padding: 13px 20px; border-radius: 8px; background: #b13c11; color: white; font-size: 14px; font-weight: 600; cursor: pointer; text-decoration: none; }
 .story-button:hover { background: #96320e; }
+.app-store-logo { width: 15px; height: 18px; margin-top: -2px; }
+.story-button:has(.app-store-logo) { gap: 10px; }
+.story-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; margin-top: 26px; }
+.story-link { font-size: 14px; font-weight: 600; color: var(--story-accent); text-decoration: none; }
+.story-link:hover { text-decoration: underline; text-underline-offset: 4px; }
+.closing-story .story-button { margin-top: 26px; }
 .hero-reader { width: 100%; max-width: 340px; justify-self: center; }
 .phone-frame { padding: 9px; border: 1px solid #625447; border-radius: 42px; background: #29221c; box-shadow: 0 24px 65px #0002; }
 .phone-frame img { width: 100%; border-radius: 34px; display: block; }
